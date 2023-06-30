@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import NavigationBar from "./components/NavigationBar";
 import Sidebar from "./components/Sidebar";
+import Default from "./pages/Default";
 
 function App() {
   // const [data, setData] = React.useState("hello data");
@@ -15,6 +16,7 @@ function App() {
     <>
       <NavigationBar />
       <Sidebar/>
+      <Default/>
       {/* <p>{!data ? "Loading..." : data}</p> */}
     </>
   );
