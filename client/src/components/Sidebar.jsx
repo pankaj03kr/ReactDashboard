@@ -2,14 +2,20 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { BsHouse, BsGraphUp, BsCart4, BsEnvelope, BsChat, BsCalendar, BsFilePost, BsBag } from 'react-icons/bs';
 // import Default from '../pages/Default';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <div
-      className="bg-primary fs-5 text-white start-0 bottom-0"
+      className="sidebar bg-primary fs-5 text-white start-0 bottom-0"
       
     >
       <h5 className="py-3 px-3 text-uppercase">Dashboard</h5>
+      <ul>
+        <li><Link to="/"><BsHouse className="me-2" />Default</Link></li>
+        <li><Link to="/analitics"><BsGraphUp className="me-2" />Analitics</Link></li>
+        <li><Link to="/sales"><BsCart4 className="me-2" />Sales</Link></li>
+      </ul>
       <Nav className="flex-column">
 
         <Nav.Link href="{<Default/>}" className="text-white">
