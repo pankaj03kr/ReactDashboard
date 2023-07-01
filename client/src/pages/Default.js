@@ -6,6 +6,10 @@ const Default = () => {
     <div>
       <Container>
         <Row>
+          <Col md={9}>
+            <Row>
+
+           
           <Col md={4}>
             <Card>
               <Card.Header>Revenue</Card.Header>
@@ -45,8 +49,9 @@ const Default = () => {
               <Card.Footer>Compare to the last year (2019)</Card.Footer>
             </Card>
           </Col>
-
-
+          </Row>
+          </Col>
+      <Col ></Col>
           <Col md={4}>
             <Card>
               <Card.Header>Revenue</Card.Header>
