@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import NavigationBar from "./components/NavigationBar";
 import Sidebar from "./components/Sidebar";
+import { Col, Container, Row } from "react-bootstrap";
 import Default from "./pages/Default";
 
 function App() {
@@ -14,9 +15,18 @@ function App() {
 
   return (
     <>
+      {/* <Default/> */}
+      <Container fluid>
       <NavigationBar />
-      <Sidebar/>
-      <Default/>
+        <Row>
+          <Col md={2}>
+            <Sidebar/>
+          </Col>
+          <Col md={10}>
+            <Default/>
+          </Col>
+        </Row>
+      </Container>
       {/* <p>{!data ? "Loading..." : data}</p> */}
     </>
   );

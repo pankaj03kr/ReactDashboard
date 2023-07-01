@@ -1,16 +1,18 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { BsHouse, BsGraphUp, BsCart4, BsEnvelope, BsChat, BsCalendar, BsFilePost, BsBag } from 'react-icons/bs';
+// import Default from '../pages/Default';
 
 const Sidebar = () => {
   return (
     <div
       className="bg-primary fs-5 text-white start-0 bottom-0"
-      style={{ width: '260px' }}
+      
     >
       <h5 className="py-3 px-3 text-uppercase">Dashboard</h5>
       <Nav className="flex-column">
-        <Nav.Link href="#" className="text-white">
+
+        <Nav.Link href="{<Default/>}" className="text-white">
         <BsHouse className="me-2" />
           Default
         </Nav.Link>
