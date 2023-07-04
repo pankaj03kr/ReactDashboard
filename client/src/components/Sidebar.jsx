@@ -11,10 +11,10 @@ const Sidebar = () => {
       
     >
       <h5 className="py-3 px-3 text-uppercase">Dashboard</h5>
-      <ul>
-        <li><Link to="/"><BsHouse className="me-2" />Default</Link></li>
-        <li><Link to="/analitics"><BsGraphUp className="me-2" />Analitics</Link></li>
-        <li><Link to="/sales"><BsCart4 className="me-2" />Sales</Link></li>
+      <ul className='fs-5 d-flex flex-column'>
+        <li><Link to="/" className='px-3 py-1'><BsHouse className="me-2" />Default</Link></li>
+        <li><Link to="/analitics" className='px-3 py-1'><BsGraphUp className="me-2" />Analitics</Link></li>
+        <li><Link to="/sales" className='px-3 py-1'><BsCart4 className="me-2" />Sales</Link></li>
       </ul>
       <Nav className="flex-column">
 

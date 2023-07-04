@@ -1,10 +1,10 @@
 .sidebar ul {
   list-style-type: none;
   padding: 0;
-  margin-left: 1rem;
 }
 
 .sidebar ul li a {
   display: block;
   color: white;
+  text-decoration: none;
 }

@@ -24,7 +24,7 @@ function App() {
           <Col md={2}>
             <Sidebar/>
           </Col>
-          <Col md={10}>
+          <Col md={10} className="pt-4">
             <Routes>
               <Route path="/" element={<Default/>}/>
             </Routes>
