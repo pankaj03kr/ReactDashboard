@@ -1,4 +1,4 @@
-.sidebar ul {
+/* .sidebar ul {
   list-style-type: none;
   padding: 0;
   margin-left: 1rem;
@@ -7,4 +7,14 @@
 .sidebar ul li a {
   display: block;
   color: white;
+} */
+#default .card-header {
+  border: 0;
+  background-color: initial;
+  
+}
+
+#default .card-footer {
+  border: 0;
+  background-color: initial;
 }

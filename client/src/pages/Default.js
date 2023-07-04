@@ -1,69 +1,94 @@
 import React from "react";
-import { Container, Row, Card, Col } from "react-bootstrap";
+import { Container, Row, Card, Col, } from "react-bootstrap";
 import { FaArrowDown } from "react-icons/fa";
+import Button from "react-bootstrap/Button";
+
+import LineChart from "./LineChart";
+import CircularProgressBar from "./CircularProgressBar";
+import List from "./Table";
+import Member from "./Member";
+
 const Default = () => {
+  const percentage = 80;
+
   return (
-    <div>
+    <div id="default">
       <Container>
         <Row>
           <Col md={9}>
             <Row>
-            <Col md={4}>
-              <Card>
-                <Card.Header>Revenue</Card.Header>
-                <Card.Body>
-                  $2454{" "}
-                  <span>
-                    11.4 <FaArrowDown />
-                  </span>
-                </Card.Body>
-                <Card.Footer>Compare to the last year (2019)</Card.Footer>
-              </Card>
-            </Col>
+              <Col md={4}>
+                <Card>
+                  <Card.Header>Revenue</Card.Header>
+                  <Card.Body>
+                    $2454{" "}
+                    <span>
+                      11.4 <FaArrowDown />
+                    </span>
+                  </Card.Body>
+                  <Card.Footer>Compare to the last year (2019)</Card.Footer>
+                </Card>
+              </Col>
 
-            <Col md={4}>
-              <Card>
-                <Card.Header>Revenue</Card.Header>
-                <Card.Body>
-                  $2454{" "}
-                  <span>
-                    11.4 <FaArrowDown />
-                  </span>
-                </Card.Body>
-                <Card.Footer>Compare to the last year (2019)</Card.Footer>
-              </Card>
-            </Col>
+              <Col md={4}>
+                <Card>
+                  <Card.Header>Revenue</Card.Header>
+                  <Card.Body>
+                    $2454{" "}
+                    <span>
+                      11.4 <FaArrowDown />
+                    </span>
+                  </Card.Body>
+                  <Card.Footer>Compare to the last year (2019)</Card.Footer>
+                </Card>
+              </Col>
 
-            <Col md={4}>
-              <Card>
-                <Card.Header>Revenue</Card.Header>
-                <Card.Body>
-                  $2454{" "}
-                  <span>
-                    11.4 <FaArrowDown />
-                  </span>
-                </Card.Body>
-                <Card.Footer>Compare to the last year (2019)</Card.Footer>
-              </Card>
-            </Col>
+              <Col md={4}>
+                <Card>
+                  <Card.Header>Revenue</Card.Header>
+                  <Card.Body>
+                    $2454{" "}
+                    <span>
+                      11.4 <FaArrowDown />
+                    </span>
+                  </Card.Body>
+                  <Card.Footer>Compare to the last year (2019)</Card.Footer>
+                </Card>
+              </Col>
             </Row>
             <Row>
-              <Col md={12}>Hello</Col>
+              <Col md={12}>
+                <LineChart />
+              </Col>
             </Row>
           </Col>
           <Col md={3}>
             <Col>
               <Card>
-                <Card.Header>Revenue</Card.Header>
+                <Card.Header>Monthly Target</Card.Header>
                 <Card.Body>
-                  $2454{" "}
-                  <span>
-                    11.4 <FaArrowDown />
-                  </span>
+                  <CircularProgressBar percentage={percentage} />
                 </Card.Body>
-                <Card.Footer>Compare to the last year (2019)</Card.Footer>
+                <Card.Footer>
+                  You need abit more effort to hit monthly target
+                </Card.Footer>
+                <Button variant="info">Learn More</Button>{" "}
               </Card>
             </Col>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col md={3}>
+            <Row>
+              <Member />
+            </Row>
+          </Col>
+
+          <Col md={9}>
+            <Row>
+              <List />
+            </Row>
           </Col>
         </Row>
       </Container>

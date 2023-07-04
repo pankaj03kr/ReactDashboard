@@ -22,7 +22,7 @@ const Sidebar = () => {
         <BsHouse className="me-2" />
           Default
         </Nav.Link>
-        <Nav.Link href="#" className="text-white">
+        <Nav.Link href="{<Analytic/>}" className="text-white">
         <BsGraphUp className="me-2" />
           Analytics
         </Nav.Link>
