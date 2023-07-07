@@ -18,3 +18,22 @@
   border: 0;
   background-color: initial;
 }
+
+.dot{
+  list-style: none;
+  font-weight: bold;
+
+}
+.region{
+  justify-content: space-between;
+}
+.name{
+  color: rgb(85, 77, 77);
+}
+.dounut{
+  height: 300px;
+  width: 300px;
+}
+.logo{
+  
+}

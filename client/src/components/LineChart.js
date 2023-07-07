@@ -3,10 +3,7 @@ import {
   Chart as ChartJs,
   CategoryScale,
   LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
+
   LineElement,
   PointElement,
 } from "chart.js";

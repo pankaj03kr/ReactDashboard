@@ -1,9 +1,9 @@
 import React from "react";
-import user1 from "../assets/photos/user1.jpg";
-import user2 from "../assets/photos/user2.jpg";
-import user3 from "../assets/photos/user3.jpg";
-import user4 from "../assets/photos/user4.jpg";
-import user5 from "../assets/photos/user5.jpg";
+import user1 from "../Picture/photos/user1.jpg";
+import user2 from "../Picture/photos/user2.jpg";
+import user3 from "../Picture/photos/user3.jpg";
+import user4 from "../Picture/photos/user4.jpg";
+import user5 from "../Picture/photos/user5.jpg";
 import Table from "react-bootstrap/Table";
 import { Button, Card } from "react-bootstrap";
 import { FaUserPlus } from "react-icons/fa";
@@ -48,7 +48,7 @@ const Member = () => {
                 <>
                   <tr key={index} className="border-top">
                     <td>
-                      <div className="d-flex align-items-center p-2">
+                      <div className="d-flex align-items-center p-0">
                         <img
                           src={person.avatar}
                           className="rounded-circle"

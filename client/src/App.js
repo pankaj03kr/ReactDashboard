@@ -4,8 +4,8 @@ import NavigationBar from "./components/NavigationBar";
 import Sidebar from "./components/Sidebar";
 import { Col, Container, Row } from "react-bootstrap";
 import Default from "./pages/Default";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Analytic from "./Analytic/Analytic";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Analytic from "./pages/Analytic";
 
 function App() {
   // const [data, setData] = React.useState("hello data");
@@ -19,20 +19,19 @@ function App() {
     <>
       {/* <Default/> */}
       <Container fluid>
-      <NavigationBar />
+        <NavigationBar />
         <Router>
-        <Row>
-          <Col md={2}>
-            <Sidebar/>
-          </Col>
-          <Col md={10}>
-            <Routes>
-              <Route path="/" element={<Default/>}/>
-              <Route path="/analitics" element={<Analytic/>}/>
-            </Routes>
-          </Col>
-        </Row>
-
+          <Row>
+            <Col md={2}>
+              <Sidebar />
+            </Col>
+            <Col md={10}>
+              <Routes>
+                <Route path="/" element={<Default />} />
+                <Route path="/analitics" element={<Analytic />} />
+              </Routes>
+            </Col>
+          </Row>
         </Router>
       </Container>
       {/* <p>{!data ? "Loading..." : data}</p> */}

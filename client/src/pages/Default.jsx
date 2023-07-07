@@ -3,10 +3,10 @@ import { Container, Row, Card, Col, } from "react-bootstrap";
 import { FaArrowDown } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
 
-import LineChart from "./LineChart";
-import CircularProgressBar from "./CircularProgressBar";
-import List from "./Table";
-import Member from "./Member";
+import LineChart from "../components/LineChart";
+import CircularProgressBar from "../components/CircularProgressBar";
+import List from "../components/Table";
+import Member from "../components/Member";
 
 const Default = () => {
   const percentage = 80;
