@@ -2,60 +2,30 @@ import React from "react";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import {rows} from "../File/constant"
 
 const List = () => {
-  const rows = [
-    {
-      customer: "Clayton Bates",
-      firstName: "Clayton",
-      lastName: "Bates",
-      //   short: firstName[0] + lastName[0],
-      date: "	8 May 2020",
-      amount: "$137",
-      status: "Approved",
-    },
-    {
-      customer: "Gabriel Frazier",
-      firstName: "Gabriel",
-      lastName: "Frazier",
-      //   short: firstName[0] + lastName[0],
-      date: "6 May 2020",
-      amount: "$146",
-      status: "Approved",
-    },
-    {
-      customer: "Debra Hamilton",
-      firstName: "Debra",
-      lastName: "Hamilton",
-      //   short: firstName[0] + lastName[0],
-      date: "1 May 2020",
-      amount: "$355",
-      status: "Pending",
-    },
-    {
-      customer: "Stacey Ward",
-      firstName: "Stacey",
-      lastName: "Ward",
-      //   short: firstName[0] + lastName[0],
-      date: "	28 April 2020",
-      amount: "$1375",
-      status: "Rejected",
-    },
-    {
-      customer: "Troy Alexander",
-      firstName: "Troy",
-      lastName: "Alexander",
-      //   short: firstName[0] + lastName[0],
-      date: "	28 April 2020",
-      amount: "$137",
-      status: "Approved",
-    },
-  ];
+  // const [rows, setRows] = useState([]);
+
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3000/data.json")
+  //     .then((res) => {
+  //       const rowsData = res.data.find((obj) => obj.rows !== undefined).rows;
+  //       setRows(rowsData);
+  //       console.log(rowsData);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
 
   return (
     <>
       <Card>
-        <h1 style={{ fontSize: "20px" }}>Latest Transaction</h1>
+        <h1 style={{ fontSize: "20px" }} className="p-3">Latest Transaction</h1>
         <Table striped bordered hover>
           <thead>
             <tr>
@@ -66,10 +36,11 @@ const List = () => {
             </tr>
           </thead>
           <tbody>
-            {rows.map((row,index) => {
+            {rows.map((row, index) => {
               return (
                 <>
-                  <tr>
+                {console.log(row)}
+                  <tr key={index}>
                     <td>
                       <div className="d-flex">
                         <div className="bg-success rounded-pill p-2">

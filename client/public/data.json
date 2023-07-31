@@ -1,0 +1,58 @@
+[
+  {
+    "name": "United States of America",
+    "percentage": "37.61%"
+  },
+  {
+    "name": "Brazil",
+    "percentage": "16.79%"
+  },
+  {
+    "name": "India",
+    "percentage": "12.42%"
+  },
+  {
+    "name": "China",
+    "percentage": "9.85%"
+  },
+  {
+    "name": "Malaysia",
+    "percentage": "7.68%"
+  },
+  {
+    "name": "Thailand",
+    "percentage": "37.61%"
+  },
+  {
+    "persons": [
+      {
+        "avatar": "/picture/photos/user1.jpg",
+        "name": "Terrance Moreno",
+        "desg": "Software Engineer"
+      },
+      {
+        "avatar": "/picture/photos/user2.jpg",
+        "name": "Ron Vargas",
+        "desg": "UI/UX Designerr"
+      },
+      {
+        "avatar": "/picture/photos/user3.jpg",
+        "name": "Luke Cook",
+        "desg": "HR Executive"
+      },
+      {
+        "avatar": "/picture/photos/user4.jpg",
+        "name": "Joyce Freeman",
+        "desg": "Frontend Developer"
+      },
+      {
+        "avatar": "/picture/photos/user5.jpg",
+        "name": "Samantha Phillips",
+        "desg": "Compliance Managerr"
+      }
+    ]
+  }
+ 
+ 
+  
+]

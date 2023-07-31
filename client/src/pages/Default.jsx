@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Card, Col, } from "react-bootstrap";
+import { Container, Row, Card, Col } from "react-bootstrap";
 import { FaArrowDown } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
 
@@ -16,7 +16,7 @@ const Default = () => {
       <Container>
         <Row>
           <Col md={9}>
-            <Row>
+            <Row className="mb-3">
               <Col md={4}>
                 <Card>
                   <Card.Header>Revenue</Card.Header>

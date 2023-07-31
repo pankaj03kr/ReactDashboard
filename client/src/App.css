@@ -34,6 +34,59 @@
   height: 300px;
   width: 300px;
 }
-.logo{
+/* .logo{
   
+} */
+
+
+/* Basic styles for the search box */
+.search-box {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #fff;
+}
+
+/* Hover effect */
+.search-box:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.threedot{
+  width: 20px;
+  height: 20px;
+  color:black;
+  border-radius: 50%;
+
+}
+.threedot:hover{
+  background-color: rgb(218, 216, 216);
+  box-shadow: 0px 0px 6px 4px rgba(243, 243, 243, 0.3);
+
+}
+
+.search{
+  gap: 30px;
+}
+.upload{
+  height: 185px;
+  width: 185px;
+}
+.headingBtn{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  gap: 20px;
+  left: 700px;
+  padding-bottom: 20px;
+}
+
+.addbtn{
+  margin-left: 700px;
+  /* left: 750px; */
+  padding: 0px 25px  0px;
+  color: white;
 }

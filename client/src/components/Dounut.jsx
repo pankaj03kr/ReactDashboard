@@ -2,7 +2,7 @@ import React from 'react'
 import {Chart as ChartJS,ArcElement,Tooltip,Legend} from "chart.js"
 import { BsDot } from "react-icons/bs";
 import {Doughnut} from "react-chartjs-2";
-import{Card,Row} from "react-bootstrap"
+import{Card,Row,Col} from "react-bootstrap"
 
 ChartJS.register(ArcElement,Tooltip,Legend);
 
@@ -32,7 +32,8 @@ const Dounut = () => {
   ]
   return (
     <>
-    <Row>
+    <Row className='mb-3'>
+      <Col md={9}>
       <Card>
       <div className='dounut'>
     <Doughnut data={data}options={options}/>
@@ -58,7 +59,7 @@ const Dounut = () => {
     </ul>
     </Card.Body>
       </Card>
-      
+      </Col>
     </Row>
     
      

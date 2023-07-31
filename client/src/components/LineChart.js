@@ -1,4 +1,5 @@
 import React from "react";
+import {Card} from "react-bootstrap"
 import {
   Chart as ChartJs,
   CategoryScale,
@@ -9,6 +10,7 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 ChartJs.register(CategoryScale, LinearScale, LineElement, PointElement);
+
 
 const LineChart = () => {
   const data = {
@@ -63,8 +65,11 @@ const LineChart = () => {
 
   return (
     <div>
-      <h1>Unique Visitors</h1>
+      
+      <Card className="mb-3">
+      <h4 className="p-2">Unique Visitors</h4>
       <Line data={data} options={options} style={{margin:"20px"}}></Line>
+      </Card>
     </div>
   );
 };

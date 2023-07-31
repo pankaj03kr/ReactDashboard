@@ -4,7 +4,7 @@ import { BsSearch, BsPersonCircle } from 'react-icons/bs';
 
 const NavigationBar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className='mb-3'>
       <Navbar.Brand href="#">Touch Analytics</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="navbar-nav">
